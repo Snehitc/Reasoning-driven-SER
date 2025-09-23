@@ -4,14 +4,14 @@ Official Implementation of the paper "Reasoning Driven Captions To Assist Noise 
 # 🚧 Under construction 🚧
 This repository is under construction. The necessary code files and a link to the trained model's checkpoint will be updated here soon.
 
-# Tasks
+# TODO
 - [ ] Readme
-  - [ ] pipeline (fig)
-  - [ ] results
-  - [ ] requirements
+  - [ ] Pipeline (fig)
+  - [ ] Results
+  - [ ] Requirements
 - [ ] Code files
-  - [ ] config
-  - [ ] model object
-  - [ ] custom preprocessors
+  - [ ] Config
+  - [ ] Model object
+  - [ ] Custom preprocessors
   - [ ] Evaluation
-- [ ] trained model's checkpoint 
+- [ ] Trained model's checkpoint 
