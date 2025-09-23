@@ -1,5 +1,5 @@
 # Reasoning-driven-SER
-Official Implementation of the paper "Reasoning Driven Captions To Assist Noise Robust Speech Emotion Recognition"
+Official Implementation of "Reasoning Driven Captions To Assist Noise Robust Speech Emotion Recognition"
 
 # 🚧 Under construction 🚧
 This repository is under construction. The necessary code files and a link to the trained model's checkpoint will be updated here soon.
