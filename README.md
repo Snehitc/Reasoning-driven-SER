@@ -6,7 +6,7 @@ This repository is under construction. The necessary code files and a link to th
 
 
 # Example with noisy speech (-10dB): Mellow vs Transcript
-| Emotion     | Happy 😄  | Surprise 😮 |
+| Emotion     | Happy 😄  | Surprise 😲 |
 | :-------:   | :------   | :-------   |
 | Speech      | MSP-PODCAST_2198_0087.wav | MSP-PODCAST_0584_0080.wav | 
 | Noise       | Sea    |  Plaza |
