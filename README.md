@@ -13,6 +13,13 @@ This repository is under construction. The necessary code files and a link to th
 | Transcript  | *... designation, money over ip-*  | *bella comes out of nowhere, like a fricking hobbit.*  |
 | Mellow      | *The audio is a dynamic and immersive experience, with the sound of the waves crashing against the shore creating a sense of tension and release. the man's voice adds a sense of human presence and narrative to the audio, making it feel more engaging and engaging.*   | *the audio is loud and boisterous, with a mix of high-pitched sounds from the music and the sounds of the cars. the people talking are likely in the background, but their voices are still audible. the overall sound is chaotic and energetic, with a sense of urgency and excitement*  |
 
+
+<audio controls>
+  <source src="https://github.com/Snehitc/Reasoning-driven-SER/raw/refs/heads/main/clips/MSP-PODCAST_0584_0080_593000__santiagocartier__ambiente-plaza-de-mayo-marcha-por-dia-de-la-lealtad-peronista-toma-2_80_90.wav" type="audio/mpeg">
+  ...
+</audio>
+
+
 # TODO
 - [ ] Readme
   - [ ] Pipeline (fig)
