@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Audio Demo: Mellow vs Transcript</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+  </style>
+</head>
+<body>
+  <h2>Example with noisy speech (-10dB): Mellow vs Transcript</h2>
+
+  <table>
+    <tr>
+      <th>Emotion</th>
+      <th>Happy 😄</th>
+      <th>Surprise 😲</th>
+    </tr>
+    <tr>
+      <td>Speech</td>
+      <td>MSP-PODCAST_2198_0087.wav</td>
+      <td>MSP-PODCAST_0584_0080.wav</td>
+    </tr>
+    <tr>
+      <td>Noise</td>
+      <td>Sea</td>
+      <td>Plaza</td>
+    </tr>
+    <tr>
+      <td>Audio</td>
+      <td><audio controls src="audio/happy.mp3"></audio></td>
+      <td><audio controls src="audio/surprise.mp3"></audio></td>
+    </tr>
+    <tr>
+      <td>Transcript</td>
+      <td><i>... designation, money over ip-</i></td>
+      <td><i>bella comes out of nowhere, like a fricking hobbit.</i></td>
+    </tr>
+    <tr>
+      <td>Mellow</td>
+      <td><i>The audio is loud and energetic…</i></td>
+      <td><i>The audio is chaotic and energetic…</i></td>
+    </tr>
+  </table>
+</body>
+</html>
