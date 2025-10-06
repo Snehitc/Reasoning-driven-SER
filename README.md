@@ -22,6 +22,7 @@ This repository is under construction. The necessary code files and a link to th
 - [ ] Readme
   - [ ] Pipeline (fig)
   - [ ] Results
+  - [x] Example
   - [ ] Requirements
 - [ ] Code files
   - [ ] Config
