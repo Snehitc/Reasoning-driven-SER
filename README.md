@@ -198,7 +198,7 @@ Table: CCC scores on Unseen Synthetic Noisy Speech (Speech: MSP-Podcast-Test1 se
 
 # TODO
 - [ ] Readme
-  - [ ] Pipeline (fig)
+  - [x] Pipeline (fig)
   - [x] Results
   - [x] Example
   - [ ] Requirements
