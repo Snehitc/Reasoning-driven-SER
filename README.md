@@ -190,7 +190,8 @@ This repository is under construction. The necessary code files and a link to th
     </tr>
   </tbody>
 </table>
-  
+Table: CCC scores on Unseen Synthetic Noisy Speech (Speech: MSP-Podcast-Test1 set) at diverse SNRs comparing Proposed and Baseline with respect to all Context-Aware Texts performance. (Text-only: Transcripts are ground-truth version)
+
 # TODO
 - [ ] Readme
   - [ ] Pipeline (fig)
