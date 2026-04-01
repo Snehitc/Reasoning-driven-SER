@@ -194,7 +194,7 @@ This repository is under construction. The necessary code files and a link to th
 # TODO
 - [ ] Readme
   - [ ] Pipeline (fig)
-  - [ ] Results
+  - [x] Results
   - [x] Example
   - [ ] Requirements
 - [ ] Code files
