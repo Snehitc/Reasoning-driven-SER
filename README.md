@@ -41,7 +41,7 @@ This repository is under construction. The necessary code files and a link to th
     </tr>
   </thead>
   <tbody align="center">
-    <tr>
+    <tr style="height: 50px;">
       <td rowspan="3">5dB</td>
       <td>Arousal</td>
       <td>0.5929</td>
