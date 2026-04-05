@@ -225,13 +225,18 @@ Rd-SER
                 |___tram
                 |___sea
                 |___ ...
+
     |___mellow_replace_wrapper
         |___wrapper.py # Our file modified version of Mellow's official version
+
     |___mellow
         |___mellow
             |___wrapper.py # Important: Change this file from *official mellow's file* with Our "wrapper.py"
         |___ ...
 ```
+
+# Citation (Coming Soon)
+This work is accepted for publication in ICASSP 2026. Citation will be updated soon in the near future once it's available on IEEE Xplore
 
 # TODO
 - [ ] Readme
@@ -239,12 +244,13 @@ Rd-SER
   - [x] Results
   - [x] Example
   - [x] Directory Structure
-- [ ] Code files
+  - [ ] Citation (coming soon: ICASSP 2026)
+- [x] Code files
   - [x] Config
   - [x] Dataloader
   - [x] Utils: Mellow
   - [x] Model object
-  - [ ] Custom preprocessors
+  - [x] Custom preprocessors
   - [x] Evaluation
   - [x] Requirements
 - [ ] Trained model's checkpoint 
