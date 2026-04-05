@@ -196,18 +196,53 @@ This repository is under construction. The necessary code files and a link to th
 </table>
 Table: CCC scores on Unseen Synthetic Noisy Speech (Speech: MSP-Podcast-Test1 set) at diverse SNRs comparing Proposed and Baseline with respect to all Context-Aware Texts performance. (Text-only: Transcripts are ground-truth version)
 
+
+
+
+
+# Directory Structure
+```
+Rd-SER
+    |___evaluate.py
+    |___config.yaml
+    |___requirements.txt
+    
+    |___model
+        |___model.py
+        |___ckpt
+            |___# Add "RdSER_Mellow_BestModel.pt" in this dir
+    
+    |___utils
+        |___utils.py
+    
+    |___dataset
+        |___MSP_dataset.py
+        |___MSP
+            |___Audio
+            |___labels
+        |___FreeSound_Noise
+            |___Test
+                |___tram
+                |___sea
+                |___ ...
+    |___mellow
+        |___mellow
+            |___wrapper.py # Important: Change this file from *official mellow's file* with Our "wrapper.py"
+        |___ ...
+```
+
 # TODO
 - [ ] Readme
   - [x] Pipeline (fig)
   - [x] Results
   - [x] Example
-  - [ ] Requirements
+  - [x] Directory Structure
 - [ ] Code files
-  - [ ] Config
-  - [ ] Dataloader
-  - [ ] Utils: Mellow
-  - [ ] Model object
+  - [x] Config
+  - [x] Dataloader
+  - [x] Utils: Mellow
+  - [x] Model object
   - [ ] Custom preprocessors
-  - [ ] Evaluation
-  - [ ] Requirements
+  - [x] Evaluation
+  - [x] Requirements
 - [ ] Trained model's checkpoint 
