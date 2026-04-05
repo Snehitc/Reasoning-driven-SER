@@ -55,7 +55,7 @@ pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https
 >>Replace $${\color{red}wrapper.py}$$ file from official mellow implimentation with our $${\color{blue}wrapper.py}$$. Please find our file in the __mellow_replace_wrapper__ directory.\
 >>```mellow--> mellow --> wrapper.py``` replace this file with ```mellow_replace_wrapper --> wrapper.py```\
 >>\
->>__Reason__: I have modified the wrapper file to take an audio tensor as input instead of an audio file name; since we are creating noisy samples live by mixing speech (MSP) noise (Freesound) in tensor form.
+>>__Reason__: I have modified the wrapper file to take an audio tensor as input instead of an audio filename; since we are creating noisy samples in real time by mixing speech (MSP) with noise (Freesound) in tensor form.
 
 
 
