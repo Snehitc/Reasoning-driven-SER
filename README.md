@@ -21,6 +21,44 @@ This repository is under construction. The necessary code files and a link to th
 | Mellow      | *The audio is a dynamic and immersive experience, with the sound of the waves crashing against the shore creating a sense of tension and release. the man's voice adds a sense of human presence and narrative to the audio, making it feel more engaging and engaging.*   | *the audio is loud and boisterous, with a mix of high-pitched sounds from the music and the sounds of the cars. the people talking are likely in the background, but their voices are still audible. the overall sound is chaotic and energetic, with a sense of urgency and excitement*  |
 
 
+# Setup
+### 1. Clone the repository
+```
+git clone https://github.com/Snehitc/Reasoning-driven-SER.git
+cd Reasoning-driven-SER
+```
+
+### 2. Create environment
+```
+conda create -n Rd_SER python=3.9
+```
+```
+conda activate Rd_SER
+```
+
+### 3. Install requirements
+```
+pip install -r requirements.txt
+```
+
+### 4. Install Torch (CUDA version)
+```
+pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+```
+
+### 5. Add mellow
+>Mellow
+>```
+>git clone https://github.com/soham97/mellow.git
+>```
+>>$$\textbf{{\color{red}Important:}}$$ \
+>>Replace $${\color{red}wrapper.py}$$ file from official mellow implimentation with our $${\color{blue}wrapper.py}$$. Please find our file in the __mellow_replace_wrapper__ directory.\
+>>```mellow--> mellow --> wrapper.py``` replace this file with ```mellow_replace_wrapper --> wrapper.py```\
+>>\
+>>__Reason__: I have modified the wrapper file to take an audio tensor as input instead of an audio file name; since we are creating noisy samples live by mixing speech (MSP) noise (Freesound) in tensor form.
+
+
+
 
 # Results
 <table style="text-align: center;">
@@ -202,37 +240,37 @@ Table: CCC scores on Unseen Synthetic Noisy Speech (Speech: MSP-Podcast-Test1 se
 
 # Directory Structure
 ```
-Rd-SER
-    |___evaluate.py
-    |___config.yaml
-    |___requirements.txt
-    
-    |___model
-        |___model.py
-        |___ckpt
-            |___# Add "RdSER_Mellow_BestModel.pt" in this dir
-    
-    |___utils
-        |___utils.py
-    
-    |___dataset
-        |___MSP_dataset.py
-        |___MSP
-            |___Audio
-            |___labels
-        |___FreeSound_Noise
-            |___Test
-                |___tram
-                |___sea
-                |___ ...
-
-    |___mellow_replace_wrapper
-        |___wrapper.py # Our file modified version of Mellow's official version
-
-    |___mellow
-        |___mellow
-            |___wrapper.py # Important: Change this file from *official mellow's file* with Our "wrapper.py"
-        |___ ...
+Reasoning-driven-SER
+      |___evaluate.py
+      |___config.yaml
+      |___requirements.txt
+      
+      |___model
+          |___model.py
+          |___ckpt
+              |___# Add "RdSER_Mellow_BestModel.pt" in this dir
+      
+      |___utils
+          |___utils.py
+      
+      |___dataset
+          |___MSP_dataset.py
+          |___MSP
+              |___Audio
+              |___labels
+          |___FreeSound_Noise
+              |___Test
+                  |___tram
+                  |___sea
+                  |___ ...
+  
+      |___mellow_replace_wrapper
+          |___wrapper.py # Our file modified version of Mellow's official version
+  
+      |___mellow
+          |___mellow
+              |___wrapper.py # Important: Change this file from *official mellow's file* with Our "wrapper.py"
+          |___ ...
 ```
 
 # Citation (Coming Soon)
