@@ -63,6 +63,10 @@ pip install -r requirements.txt
 ### 6. Add our checkpoints
 Please download our best-trained model's checkpoint from [Zenodo](https://zenodo.org/records/19451882) (filename: __RdSER_Mellow_BestModel.pt__), place this file in .\model\ckpt directory. Check [Directory Structure](https://github.com/Snehitc/Reasoning-driven-SER#directory-structure) for better understanding.
 
+> Note:
+> - This trained model only contains the checkpoints for __WavLM__ and __Downstream Head__, and not __CLAP__, since the __CLAP__ object was kept frozen while finetuning.
+> - However, while the model's instantiation __CLAP__ will automatically load pretrained weights from HuggingFace 🤗 using from_pretrained command.
+
 # Results
 <table style="text-align: center;">
   <thead>
