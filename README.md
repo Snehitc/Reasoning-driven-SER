@@ -1,3 +1,7 @@
+[![Zenodo](https://img.shields.io/badge/Checkpoints-gray?logo=zenodo)](https://zenodo.org/records/19451882)
+[![Clips](https://img.shields.io/badge/Noisy-Example-brightgreen)](https://snehitc.github.io/Reasoning-driven-SER/)
+
+
 # Reasoning-driven-SER
 Official Implementation of "Reasoning Driven Captions To Assist Noise Robust Speech Emotion Recognition"
 
@@ -59,7 +63,8 @@ pip install -r requirements.txt
 >>__Reason__: I have modified the wrapper file to take an audio tensor as input instead of an audio filename; since we are creating noisy samples in real time by mixing speech (MSP) with noise (Freesound) in tensor form.
 
 
-
+### 6. Add our checkpoints
+Please download our best-trained model's checkpoint from [Zenodo](https://zenodo.org/records/19451882) (filename: __RdSER_Mellow_BestModel.pt__), place this file in .\model\ckpt directory. Check [Directory Structure](https://github.com/Snehitc/Reasoning-driven-SER#directory-structure) for better understandin.
 
 # Results
 <table style="text-align: center;">
