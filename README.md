@@ -36,15 +36,16 @@ conda create -n Rd_SER python=3.9
 conda activate Rd_SER
 ```
 
-### 3. Install requirements
+### 3. Install Torch (CUDA version)
+```
+pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+```
+
+### 4. Install requirements
 ```
 pip install -r requirements.txt
 ```
 
-### 4. Install Torch (CUDA version)
-```
-pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
-```
 
 ### 5. Add mellow
 >Mellow
