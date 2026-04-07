@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
 
 ### 6. Add our checkpoints
-Please download our best-trained model's checkpoint from [Zenodo](https://zenodo.org/records/19451882) (filename: __RdSER_Mellow_BestModel.pt__), place this file in .\model\ckpt directory. Check [Directory Structure](https://github.com/Snehitc/Reasoning-driven-SER#directory-structure) for better understandin.
+Please download our best-trained model's checkpoint from [Zenodo](https://zenodo.org/records/19451882) (filename: __RdSER_Mellow_BestModel.pt__), place this file in .\model\ckpt directory. Check [Directory Structure](https://github.com/Snehitc/Reasoning-driven-SER#directory-structure) for better understanding.
 
 # Results
 <table style="text-align: center;">
