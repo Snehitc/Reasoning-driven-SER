@@ -11,7 +11,6 @@ speech:
         wavs:
             Mean: -5.76616626429149e-05
             Std: 0.06568269016969738
-        
         labels:
             Min: 1
             Max: 7
