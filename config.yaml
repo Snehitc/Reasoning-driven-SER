@@ -1,0 +1,44 @@
+# Author: Snehit
+# E-mail: snehitc@gmail.com
+
+speech:
+    speech_path: "./dataset/MSP"
+    audio_dir: "Audio"                           # join with the base path
+    label_path: "labels/labels_consensus.csv"    # join with the base path
+    sampling_rate: 16000
+    normalization:
+        # Calculated Values from Train set
+        wavs:
+            Mean: -5.76616626429149e-05
+            Std: 0.06568269016969738
+        
+        labels:
+            Min: 1
+            Max: 7
+
+
+noise:
+    test:
+        noise_dir: "./dataset/FreeSound_Noise/Test"
+        noise_classes: ['plaza', 'garden', 'school', 'tram', 'sea', 'boat']
+        SNRs: [-10]
+
+
+Dataloader:
+    batch_size: 32
+    shuffle: True
+
+
+models:
+    WavLM: "microsoft/wavlm-base-plus"
+    CLAP: "laion/clap-htsat-unfused"
+    Downstream_Head:
+        XA_FFW:
+            XA_InDim: 768
+            XA_NumHead: 8
+        FC1: 512
+        FC2: 3
+        dropout_p: 0.5   
+    path: './model/ckpt'
+    ckpt: "RdSER_Mellow_BestModel.pt"
+
