@@ -1,4 +1,4 @@
-[![Zenodo](https://img.shields.io/badge/Checkpoints-gray?logo=zenodo)](https://zenodo.org/records/19451882)
+[![Zenodo](https://img.shields.io/badge/Model-Checkpoints-blue?logo=zenodo)](https://zenodo.org/records/19451882)
 [![Clips](https://img.shields.io/badge/Noisy-Example-brightgreen)](https://snehitc.github.io/Reasoning-driven-SER/)
 
 
