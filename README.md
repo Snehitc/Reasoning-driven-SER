@@ -297,4 +297,4 @@ This work is accepted for publication in ICASSP 2026. Citation will be updated s
   - [x] Custom preprocessors
   - [x] Evaluation
   - [x] Requirements
-- [ ] Trained model's checkpoint 
+- [x] Trained model's checkpoint 
