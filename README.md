@@ -3,10 +3,7 @@
 
 
 # Reasoning-driven-SER
-Official Implementation of "Reasoning Driven Captions To Assist Noise Robust Speech Emotion Recognition"
-
-# 🚧 Under construction 🚧
-This repository is under construction. The necessary code files and a link to the trained model's checkpoint will be updated here soon.
+Official Implementation of research paper "Reasoning Driven Captions To Assist Noise Robust Speech Emotion Recognition" accepted for publication in ICASSP 2026
 
 # Pipeline
 ![Pipeline](docs/ModelArchitecture_xA_2.jpg)
@@ -58,7 +55,7 @@ pip install -r requirements.txt
 >```
 >>$$\textbf{{\color{red}Important:}}$$ \
 >>Replace $${\color{red}wrapper.py}$$ file from official mellow implimentation with our $${\color{blue}wrapper.py}$$. Please find our file in the __mellow_replace_wrapper__ directory.\
->>```mellow--> mellow --> wrapper.py``` replace this file with ```mellow_replace_wrapper --> wrapper.py```\
+>>```.\mellow\mellow\wrapper.py``` replace this file with ```.\mellow_replace_wrapper\wrapper.py```\
 >>\
 >>__Reason__: I have modified the wrapper file to take an audio tensor as input instead of an audio filename; since we are creating noisy samples in real time by mixing speech (MSP) with noise (Freesound) in tensor form.
 
