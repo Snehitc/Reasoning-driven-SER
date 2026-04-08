@@ -295,7 +295,7 @@ This work is accepted for publication in ICASSP 2026. Citation will be updated s
   - [x] Dataloader
   - [x] Utils: Mellow
   - [x] Model object
-  - [x] Custom preprocessors
+  - [x] Customised mellow wrapper
   - [x] Evaluation
   - [x] Requirements
 - [x] Trained model's checkpoint 
