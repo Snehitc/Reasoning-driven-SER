@@ -73,7 +73,7 @@ Please download our best-trained model's checkpoint from [Zenodo](https://zenodo
 ### 7. Add Dataset
 Arrange this data in the directories specified in [Directory Structure](https://github.com/Snehitc/Reasoning-driven-SER#directory-structure).
 - Speech: [MSP podcast](https://www.lab-msp.com/MSP/MSP-Podcast.html) (Release 1.10)
-- Noise: [FreeSound](https://freesound.org/) (Manually scraped data for classes mentioned in our paper)
+- Noise: [FreeSound](https://freesound.org/) and other noise datasets (Manually scraped data for classes mentioned in our paper)
 
 
 ### 8. Evaluate
