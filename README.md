@@ -67,6 +67,13 @@ Please download our best-trained model's checkpoint from [Zenodo](https://zenodo
 > - This trained model only contains the checkpoints for __WavLM__ and __Downstream Head__, and not __CLAP__, since the __CLAP__ object was kept frozen while finetuning.
 > - However, while the model's instantiation __CLAP__ will automatically load pretrained weights from HuggingFace 🤗 using from_pretrained command.
 
+
+### 7. Add Dataset
+Arrange this data in the directories specified in [Directory Structure](https://github.com/Snehitc/Reasoning-driven-SER#directory-structure).
+- Speech: [MSP podcast](https://www.lab-msp.com/MSP/MSP-Podcast.html) (Release 1.10)
+- Noise: [FreeSound](https://freesound.org/) (Manually scraped data for classes mentioned in our paper)
+
+
 # Results
 <table style="text-align: center;">
   <thead>
