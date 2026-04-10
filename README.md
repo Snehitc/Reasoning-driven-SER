@@ -60,6 +60,7 @@ pip install -r requirements.txt
 >>__Reason__: I have modified the wrapper file to take an audio tensor as input instead of an audio filename; since we are creating noisy samples in real time by mixing speech (MSP) with noise (Freesound) in tensor form.
 
 
+
 ### 6. Add our checkpoints
 Please download our best-trained model's checkpoint from [Zenodo](https://zenodo.org/records/19451882) (filename: __RdSER_Mellow_BestModel.pt__), place this file in ```.\model\ckpt``` directory. Check [Directory Structure](https://github.com/Snehitc/Reasoning-driven-SER#directory-structure) for better understanding.
 
@@ -68,10 +69,19 @@ Please download our best-trained model's checkpoint from [Zenodo](https://zenodo
 > - However, while the model's instantiation __CLAP__ will automatically load pretrained weights from HuggingFace 🤗 using from_pretrained command.
 
 
+
 ### 7. Add Dataset
 Arrange this data in the directories specified in [Directory Structure](https://github.com/Snehitc/Reasoning-driven-SER#directory-structure).
 - Speech: [MSP podcast](https://www.lab-msp.com/MSP/MSP-Podcast.html) (Release 1.10)
 - Noise: [FreeSound](https://freesound.org/) (Manually scraped data for classes mentioned in our paper)
+
+
+### 8. Evaluate
+Run this script to get the results for our best-trained model
+```
+python evaluate.py
+```
+
 
 
 # Results
