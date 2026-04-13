@@ -14,8 +14,8 @@ Official Implementation of research paper "Reasoning Driven Captions To Assist N
 
 | Emotion     | Happy 😄  | Surprise 😲 |
 | :-------:   | :------   | :-------   |
-| Label <br>[A, V, D] | [5.0, 4.6, 4.2] | [4.2, 3.0, 4.4] |
-| Pred(Mellow) <br>[A, V, D] | [5.1, 3.0, 4.9] | [5.1, 4.7, 4.5] |
+| Label_[A,V,D] | [5.0, 4.6, 4.2] | [4.2, 3.0, 4.4] |
+| Pred_[A,V,D] | [5.1, 3.0, 4.9] | [5.1, 4.7, 4.5] |
 | Speech      | MSP-PODCAST_2198_0087.wav | MSP-PODCAST_0584_0080.wav | 
 | Noise       | Sea    |  Plaza |
 | Transcript  | *... designation, money over ip-*  | *bella comes out of nowhere, like a fricking hobbit.*  |
