@@ -9,7 +9,7 @@ Official Implementation of research paper "Reasoning Driven Captions To Assist N
 ![Pipeline](docs/ModelArchitecture_mellow.jpg)
 
 # Example with noisy speech (-10dB): Mellow vs Transcript 
-| Clips 🔈 [![Clips](https://img.shields.io/badge/HTML-ClickHere-brightgreen)](https://snehitc.github.io/Reasoning-driven-SER/) |
+| Clips 🔈 [![Clips](https://img.shields.io/badge/Noisy-Example-brightgreen)](https://snehitc.github.io/Reasoning-driven-SER/) |
 |-|
 
 | Emotion     | Happy 😄  | Surprise 😲 |
