@@ -1,58 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Audio Demo: Mellow vs Transcript</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 32px 20px;
+      background: #f4f9fc;
+      color: #1f2d3d;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #144b6e;
+    }
+
+    .table-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      overflow-x: auto;
+      padding: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th,
+    td {
+      border: 1px solid #b9dced;
+      padding: 12px 14px;
+      text-align: center;
+      vertical-align: middle;
+      word-wrap: break-word;
+    }
+
+    th {
+      background-color: #87ceeb;
+      color: #083c5a;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #eaf7fd;
+    }
+
+    tr:nth-child(odd) td {
+      background-color: #f7fcff;
+    }
+
+    tr:hover td {
+      background-color: #dff2fb;
+      transition: background-color 0.2s ease;
+    }
+
+    td:first-child {
+      font-weight: bold;
+      color: #124b6b;
+      width: 18%;
+    }
+
+    audio {
+      width: 100%;
+      max-width: 280px;
+    }
+
+    i, em {
+      color: #334e68;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 12px;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
   </style>
 </head>
 <body>
   <h2>Example with noisy speech (-10dB): Mellow vs Transcript</h2>
 
-  <table>
-    <tr>
-      <th>Emotion</th>
-      <th>Happy 😄</th>
-      <th>Surprise 😲</th>
-    </tr>
-    <tr>
-      <td>Label_[A,V,D]</td>
-      <td>[5.0, 4.6, 4.2]</td>
-      <td>[4.2, 3.0, 4.4]</td>
-    </tr>
-    <tr>
-      <td>Pred_[A,V,D]</td>
-      <td>[5.1, 3.0, 4.9]</td>
-      <td>[5.1, 4.7, 4.5]</td>
-    </tr>
-    <tr>
-      <td>Speech</td>
-      <td>MSP-PODCAST_2198_0087.wav</td>
-      <td>MSP-PODCAST_0584_0080.wav</td>
-    </tr>
-    <tr>
-      <td>Noise</td>
-      <td>Sea</td>
-      <td>Plaza</td>
-    </tr>
-    <tr>
-      <td>Audio</td>
-      <td><audio controls src="MSP-PODCAST_2198_0087_720054__klankbeeld__waves-sea-dike-nl-353pm-230519_0608_320_330.mp3"></audio></td>
-      <td><audio controls src="MSP-PODCAST_0584_0080_593000__santiagocartier__ambiente-plaza-de-mayo-marcha-por-dia-de-la-lealtad-peronista-toma-2_40_50.mp3"></audio></td>
-    </tr>
-    <tr>
-      <td>Transcript</td>
-      <td><i><em>... designation, money over ip-</em></i></td>
-      <td><i><em>bella comes out of nowhere, like a fricking hobbit.</em></i></td>
-    </tr>
-    <tr>
-      <td>Mellow</td>
-      <td><i><em>The audio is a dynamic and immersive experience, with the sound of the waves crashing against the shore creating a sense of tension and release. the man's voice adds a sense of human presence and narrative to the audio, making it feel more engaging and engaging.</em></i></td>
-      <td><i><em>the audio is loud and boisterous, with a mix of high-pitched sounds from the music and the sounds of the cars. the people talking are likely in the background, but their voices are still audible. the overall sound is chaotic and energetic, with a sense of urgency and excitement</em></i></td>
-    </tr>
-  </table>
+  <div class="table-container">
+    <table>
+      <tr>
+        <th>Emotion</th>
+        <th>Happy 😄</th>
+        <th>Surprise 😲</th>
+      </tr>
+      <tr>
+        <td>Label_[A,V,D]</td>
+        <td>[5.0, 4.6, 4.2]</td>
+        <td>[4.2, 3.0, 4.4]</td>
+      </tr>
+      <tr>
+        <td>Pred_[A,V,D]</td>
+        <td>[5.1, 3.0, 4.9]</td>
+        <td>[5.1, 4.7, 4.5]</td>
+      </tr>
+      <tr>
+        <td>Speech</td>
+        <td>MSP-PODCAST_2198_0087.wav</td>
+        <td>MSP-PODCAST_0584_0080.wav</td>
+      </tr>
+      <tr>
+        <td>Noise</td>
+        <td>Sea</td>
+        <td>Plaza</td>
+      </tr>
+      <tr>
+        <td>Audio</td>
+        <td><audio controls src="MSP-PODCAST_2198_0087_720054__klankbeeld__waves-sea-dike-nl-353pm-230519_0608_320_330.mp3"></audio></td>
+        <td><audio controls src="MSP-PODCAST_0584_0080_593000__santiagocartier__ambiente-plaza-de-mayo-marcha-por-dia-de-la-lealtad-peronista-toma-2_40_50.mp3"></audio></td>
+      </tr>
+      <tr>
+        <td>Transcript</td>
+        <td><i><em>... designation, money over ip-</em></i></td>
+        <td><i><em>bella comes out of nowhere, like a fricking hobbit.</em></i></td>
+      </tr>
+      <tr>
+        <td>Mellow</td>
+        <td><i><em>The audio is a dynamic and immersive experience, with the sound of the waves crashing against the shore creating a sense of tension and release. the man's voice adds a sense of human presence and narrative to the audio, making it feel more engaging and engaging.</em></i></td>
+        <td><i><em>the audio is loud and boisterous, with a mix of high-pitched sounds from the music and the sounds of the cars. the people talking are likely in the background, but their voices are still audible. the overall sound is chaotic and energetic, with a sense of urgency and excitement</em></i></td>
+      </tr>
+    </table>
+  </div>
 </body>
 </html>
