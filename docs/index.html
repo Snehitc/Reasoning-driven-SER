@@ -27,12 +27,22 @@
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
       overflow-x: auto;
       padding: 10px;
+      -webkit-overflow-scrolling: touch;
     }
 
     table {
       width: 100%;
+      min-width: 860px; /* keeps audio columns wide enough */
       border-collapse: collapse;
       table-layout: fixed;
+    }
+
+    col.label-col {
+      width: 170px;
+    }
+
+    col.media-col {
+      width: 345px;
     }
 
     th,
@@ -66,12 +76,17 @@
     td:first-child {
       font-weight: bold;
       color: #124b6b;
-      width: 18%;
+    }
+
+    .audio-cell {
+      min-width: 320px;
     }
 
     audio {
+      display: block;
       width: 100%;
-      max-width: 280px;
+      min-width: 300px;
+      max-width: 100%;
     }
 
     i, em {
@@ -100,18 +115,24 @@
 
   <div class="table-container">
     <table>
+      <colgroup>
+        <col class="label-col">
+        <col class="media-col">
+        <col class="media-col">
+      </colgroup>
+
       <tr>
         <th>Emotion</th>
         <th>Happy 😄</th>
         <th>Surprise 😲</th>
       </tr>
       <tr>
-        <td>Label [A,V,D]</td>
+        <td>Label_[A,V,D]</td>
         <td>[5.0, 4.6, 4.2]</td>
         <td>[4.2, 3.0, 4.4]</td>
       </tr>
       <tr>
-        <td>Pred (Mellow) [A,V,D]</td>
+        <td>Pred_[A,V,D]</td>
         <td>[5.1, 3.0, 4.9]</td>
         <td>[5.1, 4.7, 4.5]</td>
       </tr>
@@ -127,8 +148,12 @@
       </tr>
       <tr>
         <td>Audio</td>
-        <td><audio controls src="MSP-PODCAST_2198_0087_720054__klankbeeld__waves-sea-dike-nl-353pm-230519_0608_320_330.mp3"></audio></td>
-        <td><audio controls src="MSP-PODCAST_0584_0080_593000__santiagocartier__ambiente-plaza-de-mayo-marcha-por-dia-de-la-lealtad-peronista-toma-2_40_50.mp3"></audio></td>
+        <td class="audio-cell">
+          <audio controls src="MSP-PODCAST_2198_0087_720054__klankbeeld__waves-sea-dike-nl-353pm-230519_0608_320_330.mp3"></audio>
+        </td>
+        <td class="audio-cell">
+          <audio controls src="MSP-PODCAST_0584_0080_593000__santiagocartier__ambiente-plaza-de-mayo-marcha-por-dia-de-la-lealtad-peronista-toma-2_40_50.mp3"></audio>
+        </td>
       </tr>
       <tr>
         <td>Transcript</td>
