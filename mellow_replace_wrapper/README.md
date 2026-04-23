@@ -4,7 +4,7 @@ Our <strong>$${\color{blue}wrapper.py}$$</strong> is modified a bit to take audi
 
 ## Credits
 GitHub Page: [Mellow](https://github.com/soham97/mellow)
->Soham Deshmukh, , Satvik Dixit, Rita Singh, and Bhiksha Raj. "Mellow: a small audio language model for reasoning." . In The Thirty-ninth Annual Conference on Neural Information Processing Systems.2025.
+>Soham Deshmukh, , Satvik Dixit, Rita Singh, and Bhiksha Raj. "Mellow: a small audio language model for reasoning." In The Thirty-ninth Annual Conference on Neural Information Processing Systems. 2025.
 ```
 @inproceedings{
   deshmukh2025mellow,
