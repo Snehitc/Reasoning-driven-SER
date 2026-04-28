@@ -1,6 +1,6 @@
 [![Zenodo](https://img.shields.io/badge/Model-Checkpoints-blue?logo=zenodo)](https://zenodo.org/records/19451882)
 [![Clips](https://img.shields.io/badge/Noisy-Example-brightgreen)](https://snehitc.github.io/Reasoning-driven-SER/)
-[!Paper](https://img.shields.io/badge/Paper-ICASSP--2026-navy?logo=ieee)](https://ieeexplore.ieee.org/document/11460654)
+[![Paper](https://img.shields.io/badge/Paper-ICASSP--2026-navy?logo=ieee)](https://ieeexplore.ieee.org/document/11460654)
 
 # Reasoning-driven-SER
 Official Implementation of research paper "Reasoning Driven Captions To Assist Noise Robust Speech Emotion Recognition" accepted for publication in ICASSP 2026
