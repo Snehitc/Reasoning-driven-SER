@@ -289,7 +289,7 @@ Reasoning-driven-SER
 
 # Citation
 > S. B. Chunarkar and C. -C. Lee, "Reasoning Driven Captions to Assist Noise Robust Speech Emotion Recognition," ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Barcelona, Spain, 2026, pp. 17197-17201, doi: 10.1109/ICASSP55912.2026.11460654.,
-```
+```bibtex
 @INPROCEEDINGS{11460654,
   author={Chunarkar, Snehit B. and Lee, Chi-Chun},
   booktitle={ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
